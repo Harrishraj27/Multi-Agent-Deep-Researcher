@@ -1,47 +1,51 @@
-# Multi-Agent Deep Researcher (MADR)
-## MCP-Enabled • Autonomous Research • Windows & Linux Compatible
-https://cobusgreyling.medium.com/openai-deep-research-ai-agent-architecture-7ac52b5f6a01
-
-## Overview
-
-Multi-Agent Deep Researcher (MADR) is an advanced AI framework that uses multiple autonomous agents to perform deep research, long-context reasoning, task decomposition, document processing, and intelligent workflow execution.
-
-Built on:
-
-#### Multi-Agent architecture
-
-#### MCP (Model Context Protocol)
-
-#### FastAPI (Python backend)
-
-#### Cross-platform support (Windows + Linux)
-
-#### LLM-driven autonomous reasoning
-
-MADR is designed for researchers, analysts, engineers, and AI developers who require an intelligent system capable of performing advanced multi-step research automatically.
-
-### Key Features
-
-### 🔎 Deep Research Mode
-Multi-step research, validation, summarization, citations, and cross-checking.
-
-### 🤖 Multi-Agent Collaboration
-Planner Agent, Research Agent, Web-Search Agent, Summarizer Agent, Tool Agent.
-
-### 🔌 MCP Integration
-Supports tool calling, resource access, and multi-model interoperability.
-
-### 🧩 Modular Agent Design
-Add/remove agents effortlessly in agents.py.
-
-### ⚡ FastAPI Backend
-High-performance API for real-time research queries.
-
-### 💻 Works on Windows & Linux
-No OS-specific code—fully cross-platform.
+# 🚀 Multi-Agent Deep Researcher (MADR)
+### **MCP-Enabled • Autonomous Research • Windows & Linux Compatible**
 
 
-# Architecture
+
+---
+
+## 🧠 Overview
+
+**Multi-Agent Deep Researcher (MADR)** is an advanced AI framework designed to perform **deep research, long-context reasoning, task decomposition, autonomous tool usage, document analysis, and multi-step workflows** using multiple intelligent agents.
+
+It is built on:
+
+- **Multi-Agent Architecture**
+- **MCP (Model Context Protocol)**
+- **FastAPI Backend**
+- **Cross-platform Windows & Linux Support**
+- **LLM-Driven Autonomous Reasoning**
+
+MADR is ideal for **researchers, analysts, engineers, AI developers, and enterprise intelligence systems**.
+
+---
+
+## ⭐ Key Features
+
+### 🔎 **Deep Research Mode**
+Performs multi-step research with validation, summarization, citations, and cross-checking.
+
+### 🤖 **Multi-Agent Collaboration**
+Includes: Planner Agent, Research Agent, Web Search Agent, Summarizer Agent, Validator, Tool Agent.
+
+### 🔌 **MCP Integration**
+Provides tool calling, resource access, and multi-model interoperability.
+
+### 🧩 **Modular Agent Design**
+Customize or add new agents easily in `agents.py`.
+
+### ⚡ **FastAPI Backend**
+High-performance, async API for instant research queries.
+
+### 💻 **Windows & Linux Compatible**
+Fully cross-platform with no OS-specific dependencies.
+
+---
+
+# 🏗 Architecture
+
+
                             User Query
                                 ↓
                         API Server (FastAPI)
@@ -57,3 +61,78 @@ No OS-specific code—fully cross-platform.
            └─────────────────────────────────────────────┘
                                ↓
              Final Research Report (JSON / Text / Markdown)
+
+---
+
+# 🛠 Installation
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/your-username/Multi-Agent-Deep-Researcher-MCP.git
+cd Multi-Agent-Deep-Researcher-MCP
+```
+
+### **2️⃣ Install dependencies**
+```bash
+pip install uv
+uv sync
+```
+
+### **3️⃣ Run the server**
+```bash
+python server.py
+```
+
+### **📡 API Usage**
+##### **POST /ask** 
+```bash
+{
+  "prompt": "Provide a deep research analysis of the future of quantum computing."
+}
+```
+##### **Response Example**
+```bash
+{
+  "result": "Quantum computing is expected to..."
+}
+```
+
+### **🧪 Example Use Cases**
+
+- **Literature review generation**
+
+- **Academic research**
+
+- **Competitive analysis**
+
+- **Policy analysis**
+
+- **Market intelligence**
+
+- **Technical documentation**
+
+- **Multi-source comparison reports**
+
+### **🔧 Extending Agents**
+
+To add a new agent:
+
+- **Open agents.py**
+
+- **Add a new class for your custom agent**
+
+- **Register it in the routing logic**
+
+- **Test using the /ask endpoint**
+
+### **🗺 Roadmap**
+
+ - **Integrated memory system**
+
+ - **Multi-model support (OpenAI, Anthropic, Llama, Groq)**
+
+ - **Vector database (Qdrant / Chroma)**
+
+ - **Browser automation agent**
+
+ - **Research visualization dashboard**
